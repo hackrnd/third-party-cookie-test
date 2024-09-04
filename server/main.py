@@ -7,7 +7,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://urban-meme-g4w9qvrgv7wcw94x-3000.app.github.dev"],
+    allow_origins=["https://automatic-space-rotary-phone-6976gxwggv4h5xjw-3000.app.github.dev"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -37,4 +37,4 @@ async def get_user(username: Optional[str] = Cookie(None)):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

@@ -16,3 +16,13 @@ Mermaid - [link](https://www.mermaidchart.com/app/projects/180edc5d-2f8c-4566-b6
 **Results:** 
 - TPC disabled - Doesn't work. Browser blocks both setting TPC by server as well as sending TPC to server. 
 - TPC enabled - Works on both chrome and firefox.  
+
+-----
+
+**Running:**  
+VSCode Tasks are available to run both server and client applications. See `tasks.json`. 
+
+**Debugging:** 
+
+- Server - Run server using the VSCode built-in Python FastAPI debugger. Set the correct python interpreter (Poetry virtualenv). 
+- Client - Run client using the command `npm run dev` on terminal. Debug using Chrome dev tools. Chrome launch debugger doesn't work in cloud-based IDE like GH codespaces.  

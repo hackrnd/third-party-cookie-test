@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // See https://code.visualstudio.com/docs/editor/tasks-appendix
+	// See https://stackoverflow.com/a/72829069 
+
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "NextJS server",
+            "type": "shell",
+            "command": "cd client && npm run dev",
+            "isBackground": true, // removes the infinite spinner
+            "presentation": {
+                "group": "main_tasks",
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "FastAPI server",
+            "type": "shell",
+            "command": "cd server && poetry run python main.py", 
+            "isBackground": true,
+            "presentation": {
+                "group": "main_tasks",
+                "reveal": "always",
+                "panel": "new",
+            }
+        },
+        {
+            // This is a compound task to run them all
+            "label": "Server and Client",
+            "dependsOn": [
+                "NextJS server",
+                "FastAPI server"
+            ],
+            "dependsOrder": "parallel", // no dependencies between tasks
+            "problemMatcher": [],
+        }
+    ]
+}
