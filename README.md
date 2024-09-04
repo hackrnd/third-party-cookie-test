@@ -6,8 +6,7 @@ Site A calls Site B resource /user which validates cookie sent in request and re
 Site A displays user details 
 
 Sequence diagram: 
-Mermaid - link 
-
+Mermaid - [link](https://www.mermaidchart.com/app/projects/180edc5d-2f8c-4566-b6f8-7a699098920c/diagrams/5ac37870-04fb-41bf-bf8e-988bccc750c7/version/v0.1/edit) 
 
 
 Scenarios: 
