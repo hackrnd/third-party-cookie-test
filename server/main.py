@@ -7,7 +7,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://0a79b4b0-0854-4922-87b1-6d4816243d5c-00-28s9y6osogld0.kirk.replit.dev"],
+    allow_origins=["https://urban-meme-g4w9qvrgv7wcw94x-3000.app.github.dev"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

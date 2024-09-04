@@ -6,7 +6,7 @@ import UserPanel from "../components/UserPanel";
 export default function Home() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const baseURL = "https://54788230-f193-4b5c-bd7c-9ff97529713a-00-3lmzjna3r2ogl.janeway.replit.dev"; 
+  const baseURL = "https://urban-meme-g4w9qvrgv7wcw94x-8000.app.github.dev"; 
 
   useEffect(() => {
     fetchUser();
